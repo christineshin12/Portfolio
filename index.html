@@ -1,0 +1,34 @@
+<head>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div class="navbar">    
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="journalism.html" class="nav-item">Journalism</a>
+      <a href="photography.html" class="nav-item">Photography</a>
+      <a href="about.html" class="nav-item">About</a>
+    </div>
+    
+   <div class="nav-right">
+    <div class="logo">CS</div>
+    <div class="nav-item hamburger">☰</div>
+  </div>
+</div>
+
+<main class="hero">
+    <div class="hero-content">
+      <h1 class="main-name">Christine Shin</h1>
+      <p class="tagline">Creative Director & Visual Storyteller</p>
+      <div class="hero-divider"></div>
+      <a href="journalism.html" class="cta-button">View Work</a>
+    </div>
+  </main>
+
+  <script>
+    document.querySelector('.hamburger').onclick = () => {
+      document.querySelector('.nav-buttons').classList.toggle('active');
+    };
+  </script>
+</body>
+

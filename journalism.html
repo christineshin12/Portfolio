@@ -1,0 +1,120 @@
+<head>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div class="navbar">    
+     <div class="nav-buttons">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="journalism.html" class="nav-item">Journalism</a>
+      <a href="photography.html" class="nav-item">Photography</a>
+      <a href="about.html" class="nav-item">About</a>
+    </div>
+    
+  <div class="nav-right">
+    <div class="logo">CS</div>
+    <div class="nav-item hamburger">☰</div>
+  </div>
+</div>
+
+<header class="page-intro">
+  <div class="heading-wrapper">
+    <h1 class="page-title">Journalism</h1> <div class="heading-accent"></div>
+    <p class="heading-subtitle">Sharing stories through different mediums</p>
+  </div>
+</header>
+
+<div class="filter-menu">
+    <button class="filter-btn" onclick="filter('Multimedia')">Multimedia</button>
+    <button class="filter-btn" onclick="filter('Written')">Written Work</button>
+</div>
+
+<div class="container">
+
+  <div class="item Multimedia">
+    <a href="https://youtu.be/ChcacPehWb0" target="_blank" class="project-title">
+      Hatchet Burger Pop-Up
+      <img src="https://img.youtube.com/vi/ChcacPehWb0/maxresdefault.jpg" width="100%" alt="Hatchet Burger Video">
+    </a>
+    <details>     
+      <summary>Read More</summary>     
+      Exploring dining and community through Ben Janasiak's weekly pop-up.
+    </details>
+  </div>
+
+  <div class="item Multimedia">
+    <a href="https://youtu.be/-qeS1GHBdz0" target="_blank" class="project-title">
+      Becoming @ohnohanajo
+      <img src="https://img.youtube.com/vi/-qeS1GHBdz0/maxresdefault.jpg" width="100%" alt="Content Creator Profile">
+    </a>
+    <details>     
+      <summary>Read More</summary>     
+      Profile on Northwestern student and content creator, Hana.
+    </details>
+  </div>
+
+  <div class="item Multimedia">
+    <a href="https://youtu.be/Foe8yRV7ROY" target="_blank" class="project-title">
+      Bennison's Bakery Contest
+      <img src="https://img.youtube.com/vi/Foe8yRV7ROY/maxresdefault.jpg" width="100%" alt="Evanston Paczki Eating Contest">
+    </a>
+    <details>     
+      <summary>Read More</summary>     
+      Highlighting the annual paczki eating contest. 
+    </details>
+  </div>
+
+  <div class="item Multimedia">
+    <a href="https://youtu.be/9XzXWcR4sj4" target="_blank" class="project-title">
+      Northwestern Student-Athlete
+      <img src="https://img.youtube.com/vi/9XzXWcR4sj4/maxresdefault.jpg" width="100%" alt="Golf Student-Athlete">
+    </a>
+    <details>     
+      <summary>Read More</summary>     
+      Profile on Northwestern golf student-athlete, Elise.
+    </details>
+  </div>
+
+  <div class="item Written">
+    <a href="https://dailynorthwestern.com/2025/09/30/campus/expectations-vs-reality-class-of-2029-early-decision-admits-reflect-on-first-weeks-at-northwestern/" target="_blank" class="project-title">
+      Expectations vs. Reality
+      <img src="The Daily Photo.png" width="100%" alt="Freshman Expectations">
+    </a>
+    <details>     
+      <summary>Read More</summary>     
+      Class of 2029 early decision admits reflect on first weeks at Northwestern.
+      <p><i>Image source: Jordyn Jones</i></p>
+    </details>
+  </div>
+  
+    <div class="item Written">
+    <a href="https://dailynorthwestern.com/2025/09/30/campus/expectations-vs-reality-class-of-2029-early-decision-admits-reflect-on-first-weeks-at-northwestern/" target="_blank" class="project-title">
+      Internship Takeaways
+      <img src="Lewkin.png" width="100%" alt="Lewkin Homepage">
+    </a>
+    <details>     
+      <summary>Read More</summary>     
+      Reflections after interning at Lewkin, a global fashion company.
+    </details>
+  </div>
+
+</div>
+
+<script>
+  // Mobile Menu Logic
+  document.querySelector('.hamburger').onclick = () => {
+    document.querySelector('.nav-buttons').classList.toggle('active');
+  };
+
+  // Portfolio Filtering Logic
+  function filter(category) {
+    const items = document.querySelectorAll('.item');
+    items.forEach(item => {
+      if (category === 'all' || item.classList.contains(category)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+</script>
+</body>
