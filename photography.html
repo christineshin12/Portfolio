@@ -2,41 +2,43 @@
   <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+  <!--Navigation bar-->
   <div class="navbar">    
      <div class="nav-buttons">
+      <!--Different pages-->
       <a href="index.html" class="nav-item">Home</a>
       <a href="journalism.html" class="nav-item">Journalism</a>
       <a href="photography.html" class="nav-item">Photography</a>
       <a href="about.html" class="nav-item">About</a>
     </div>
     
+  <!--Logo--> 
    <div class="nav-right">
     <div class="logo">CS</div>
     <div class="nav-item hamburger">☰</div>
   </div>
 </div>
 
+<!--Photography header--> 
 <header class="page-intro">
   <div class="heading-wrapper">
     <h1 class="photography-title">Photography</h1>
     <div class="heading-accent"></div>
+    <!--Photography smaller header-->
     <p class="heading-subtitle">Capturing beauty in the daily moments</p>
   </div>
 </header>
 
+<!--Container for flexbox-->
 <div class="container gallery">
-  <div class="item"><img src="korea.JPG.jpg" onclick="openLightbox(this.src)" alt="Korea Nature"></div>
-  <div class="item"><img src="basketball.jpeg" onclick="openLightbox(this.src)" alt="Basketball"></div>
-  <div class="item"><img src="jeju.jpg" onclick="openLightbox(this.src)" alt="Jeju"></div>
-  <div class="item"><img src="disney.jpg" onclick="openLightbox(this.src)" alt="Disney"></div>
-  <div class="item"><img src="hsm.jpg" onclick="openLightbox(this.src)" alt="Musical"></div>
-  <div class="item"><img src="oml.jpg" onclick="openLightbox(this.src)" alt="Service"></div>
-  <div class="item"><img src="gradgroup.JPG" onclick="openLightbox(this.src)" alt="Graduation"></div>
-  </div>
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
+  <!--All images-->
+  <div class="item"><img src="korea.JPG.jpg" alt="Korea Nature"></div>
+  <div class="item"><img src="basketball.jpeg" alt="Basketball"></div>
+  <div class="item"><img src="jeju.jpg" alt="Jeju"></div>
+  <div class="item"><img src="disney.jpg" alt="Disney"></div>
+  <div class="item"><img src="hsm.jpg" alt="Musical"></div>
+  <div class="item"><img src="oml.jpg" alt="Service"></div>
+  <div class="item"><img src="gradgroup.JPG" alt="Graduation"></div>
 </div>
 
   <script>

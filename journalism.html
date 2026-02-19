@@ -2,110 +2,136 @@
   <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+  <!--Navigation bar-->
   <div class="navbar">    
      <div class="nav-buttons">
+      <!--Different pages-->
       <a href="index.html" class="nav-item">Home</a>
       <a href="journalism.html" class="nav-item">Journalism</a>
       <a href="photography.html" class="nav-item">Photography</a>
       <a href="about.html" class="nav-item">About</a>
     </div>
     
+  <!--Logo--> 
   <div class="nav-right">
     <div class="logo">CS</div>
     <div class="nav-item hamburger">☰</div>
   </div>
 </div>
 
+<!--Journalism header--> 
 <header class="page-intro">
   <div class="heading-wrapper">
     <h1 class="page-title">Journalism</h1> <div class="heading-accent"></div>
+    <!--Journalism smaller header--> 
     <p class="heading-subtitle">Sharing stories through different mediums</p>
   </div>
 </header>
 
+<!--Two buttons--> 
 <div class="filter-menu">
+    <!--Multimedia button--> 
     <button class="filter-btn" onclick="filter('Multimedia')">Multimedia</button>
+    <!--Written work button--> 
     <button class="filter-btn" onclick="filter('Written')">Written Work</button>
 </div>
 
+<!--Container for flexbox--> 
 <div class="container">
 
+  <!--First video--> 
   <div class="item Multimedia">
     <a href="https://youtu.be/ChcacPehWb0" target="_blank" class="project-title">
       Hatchet Burger Pop-Up
       <img src="https://img.youtube.com/vi/ChcacPehWb0/maxresdefault.jpg" width="100%" alt="Hatchet Burger Video">
     </a>
-    <details>     
+    <details>    
+      <!--Dropdown for more information-->  
       <summary>Read More</summary>     
       Exploring dining and community through Ben Janasiak's weekly pop-up.
+      <p><i>Image source: Christine Shin</i></p>
     </details>
   </div>
 
+  <!--Second video--> 
   <div class="item Multimedia">
     <a href="https://youtu.be/-qeS1GHBdz0" target="_blank" class="project-title">
       Becoming @ohnohanajo
       <img src="https://img.youtube.com/vi/-qeS1GHBdz0/maxresdefault.jpg" width="100%" alt="Content Creator Profile">
     </a>
     <details>     
+      <!--Dropdown for more information-->  
       <summary>Read More</summary>     
       Profile on Northwestern student and content creator, Hana.
+      <p><i>Image source: Christine Shin</i></p>
     </details>
   </div>
 
+  <!--Third video--> 
   <div class="item Multimedia">
     <a href="https://youtu.be/Foe8yRV7ROY" target="_blank" class="project-title">
       Bennison's Bakery Contest
       <img src="https://img.youtube.com/vi/Foe8yRV7ROY/maxresdefault.jpg" width="100%" alt="Evanston Paczki Eating Contest">
     </a>
     <details>     
+       <!--Dropdown for more information--> 
       <summary>Read More</summary>     
-      Highlighting the annual paczki eating contest. 
+      Highlighting the annual paczki eating contest.
+      <p><i>Image source: Christine Shin</i></p> 
     </details>
   </div>
 
+  <!--Forth video-->
   <div class="item Multimedia">
     <a href="https://youtu.be/9XzXWcR4sj4" target="_blank" class="project-title">
       Northwestern Student-Athlete
       <img src="https://img.youtube.com/vi/9XzXWcR4sj4/maxresdefault.jpg" width="100%" alt="Golf Student-Athlete">
     </a>
     <details>     
+       <!--Dropdown for more information--> 
       <summary>Read More</summary>     
       Profile on Northwestern golf student-athlete, Elise.
+      <p><i>Image source: Christine Shin</i></p>
     </details>
   </div>
 
+  <!--First written piece-->
   <div class="item Written">
     <a href="https://dailynorthwestern.com/2025/09/30/campus/expectations-vs-reality-class-of-2029-early-decision-admits-reflect-on-first-weeks-at-northwestern/" target="_blank" class="project-title">
       Expectations vs. Reality
       <img src="The Daily Photo.png" width="100%" alt="Freshman Expectations">
     </a>
     <details>     
+       <!--Dropdown for more information--> 
       <summary>Read More</summary>     
       Class of 2029 early decision admits reflect on first weeks at Northwestern.
       <p><i>Image source: Jordyn Jones</i></p>
     </details>
   </div>
   
-    <div class="item Written">
-    <a href="https://dailynorthwestern.com/2025/09/30/campus/expectations-vs-reality-class-of-2029-early-decision-admits-reflect-on-first-weeks-at-northwestern/" target="_blank" class="project-title">
+  <!--Second written piece-->
+  <div class="item Written">
+    <a href="https://christineshin12.github.io/Interactive/" target="_blank" class="project-title">
       Internship Takeaways
       <img src="Lewkin.png" width="100%" alt="Lewkin Homepage">
     </a>
     <details>     
+       <!--Dropdown for more information--> 
       <summary>Read More</summary>     
       Reflections after interning at Lewkin, a global fashion company.
+      <p><i>Image source: Lewkin </i></p>
     </details>
   </div>
 
 </div>
 
 <script>
-  // Mobile Menu Logic
+  // Mobile menu logic
   document.querySelector('.hamburger').onclick = () => {
     document.querySelector('.nav-buttons').classList.toggle('active');
   };
 
-  // Portfolio Filtering Logic
+  // Portfolio filtering logic
   function filter(category) {
     const items = document.querySelectorAll('.item');
     items.forEach(item => {
